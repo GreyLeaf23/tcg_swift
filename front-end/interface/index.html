@@ -9,7 +9,7 @@
     <!--
         - Favicon
     -->
-    <link rel="shortcut icon" href="./pokeball-favicon2.jpg" type="image/x-icon+xml">
+    <link rel="shortcut icon" href="./pokeball-favicon2.jpg" type="image/jpg+xml">
 
     <!--
         - Custom css link
@@ -44,7 +44,7 @@
             <div class="container">
 
                 <div class="countdown-text">
-                    Release Date Of Our Demo Project!<span class="span skeBg">March 22, 2024</span>
+                    Release Date Of Our Demo Project!<span class="span skewBg">March 22, 2024</span>
                 </div>
 
                 <div class="social-wrapper">
@@ -91,24 +91,35 @@
 
                 <nav class="navbar" data-navbar>
                     <ul class="navbar-list">
+
                         <li class="navbar-item">
-                            <a href="#home" class="navbar-link">Home</a>
+                            <a href="#home" class="navbar-link skewBg" data-nav-link>Home</a>
                         </li>
+
                         <li class="navbar-item">
-                            <a href="#features" class="navbar-link">Features</a>
+                            <a href="#features" class="navbar-link skewBg" data-nav-link>Features</a>
                         </li>
+
                         <li class="navbar-item">
-                            <a href="#swift" class="navbar-link">Swift</a>
+                            <a href="#swift" class="navbar-link skewBg" data-nav-link>Swift</a>
                         </li>
+
                         <li class="navbar-item">
-                            <a href="#decks" class="navbar-link">Decks</a>
+                            <a href="#decks" class="navbar-link skewBg" data-nav-link>Decks</a>
                         </li>
+
                         <li class="navbar-item">
-                            <a href="#blog" class="navbar-link">Blog</a>
+                            <a href="#players" class="navbar-link skewBg" data-nav-link>Players</a>
                         </li>
+
                         <li class="navbar-item">
-                            <a href="#contact" class="navbar-link">Contact</a>
+                            <a href="#blog" class="navbar-link skewBg" data-nav-link>Blog</a>
                         </li>
+
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+                        </li>
+
                     </ul>
                 </nav>
 
@@ -133,6 +144,27 @@
 
 
     <!--
+        - #Search Box
+    -->
+
+    <div class="search-container" data-search-box>
+
+        <div class="input-wrapper">
+            <input type="search" name="search" aria-label="search" placeholder="Search here..."
+            class="search-field">
+
+            <button class="search-submit" aria-label="submit search" data-search-toggler>
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <button class="search-close" aria-label="close search" data-search-toggler></button>
+        </div>
+
+    </div>
+
+
+
+    <!--
         - Custom js link
     -->
     <script src="./assets/js/script.js" defer></script>
@@ -143,4 +175,5 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
