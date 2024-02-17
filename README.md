@@ -2,7 +2,7 @@
 
 A learning experience to swiftly enjoy the world of trading card games!
 
-![TCG](https://github.com/GreyLeaf23/holbertonschool-higher_level_programming/blob/main/tcg_logo.jpg)
+![TCG](https://github.com/GreyLeaf23/Demo-Project/blob/master/tcg_logo2.jpg)
 
 ## Motivation
 
