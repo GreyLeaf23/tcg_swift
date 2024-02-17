@@ -2,15 +2,19 @@
 
 A learning experience to swiftly enjoy the world of trading card games!
 
-![Showcase](https://github.com/GreyLeaf23/holbertonschool-higher_level_programming/blob/main/small.png)
+![TCG](https://github.com/GreyLeaf23/holbertonschool-higher_level_programming/blob/main/tcg_logo.jpg)
 
 ## Motivation
 
 
-As part of the Holberton's curriculum, Python is the main language that will demonstrate the abilities that I've acquired as a software
-engineer.
-Demonstrate my understanding and continue practice of the higher level field.
+One thing that everything seems to have in common is the rapid change that everything is going under, and card games are no exception.
+With so many concepts and mechanics being release, is difficult for players to keep up with all the jargon that the game may bring game bring
+and this is more daunting for newer players.
 
+It feels like you're studying the game instead of.... PLAYING IT.
+
+This is the reasoning of creating an experience that allows players to enjoy all the richness that trading card games have to offer, for anyone
+of any age and skill!
 
 
 ## Build status
@@ -35,68 +39,191 @@ Include logo/demo screenshot etc.
 - [Python](https://www.python.org/)
 - [Javascript](https://www.javascript.com/)
 - [MySQL](https://www.mysql.com/)
+- [HTML](https://html.com/)
+- [CSS](https://cssprofile.collegeboard.org/)
 
 ## Features
 What makes your project stand out?
 
 ## Code Example
-These are general functions for each of the featured languages.
 
+All of the shown examples are snippets of the code architecture:
 
+**HTML** -
+```html
+<div class="header-bottom skewBg" data-header>
+            <div class="container">
 
-Python -
-```python
-#!/usr/bin/python3
-def fizzbuzz():
-    for num in range(1, 101):
-        if num % 3 == 0 and num % 5 == 0:
-            print("FizzBuzz", end=" ")
-        elif num % 3 == 0:
-            print("Fizz", end=" ")
-        elif num % 5 == 0:
-            print("Buzz", end=" ")
-        else:
-            print(num, end=" ")
+                <a href="#" class="logo">TCG SWIFT</a>
 
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+
+                        <li class="navbar-item">
+                            <a href="#home" class="navbar-link skewBg" data-nav-link>Home</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#features" class="navbar-link skewBg" data-nav-link>Features</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#swift" class="navbar-link skewBg" data-nav-link>Swift</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#decks" class="navbar-link skewBg" data-nav-link>Decks</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#players" class="navbar-link skewBg" data-nav-link>Players</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#blog" class="navbar-link skewBg" data-nav-link>Blog</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+
+                    <button class="search-btn" aria-label="open search" data-search-toggler>
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                    <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                        <ion-icon name="menu-outline" class="menu"></ion-icon>
+                        <ion-icon name="close-outline" class="close"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
 ```
 
+**CSS** -
+```css
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
 
-Javascript -
+:root {
+
+  /**
+   * colors
+   */
+
+  --rich-black-fogra-29_95: hsla(222, 18%, 11%, 0.95);
+  --raisin-black-1: hsl(0, 0%, 16%);
+  --raisin-black-2: hsl(236, 17%, 17%);
+  --raisin-black-3: hsl(280, 11%, 11%);
+  --raisin-black-4: hsl(280, 8%, 15%);
+  --english-violet: hsl(274, 21%, 23%);
+  --eerie-black-1: hsl(277, 25%, 10%);
+  --eerie-black-2: hsl(280, 7%, 8%);
+  --roman-silver: hsl(220, 6%, 59%);
+  --quick-silver: hsl(0, 1%, 65%);
+  --light-gray-1: hsl(0, 0%, 80%);
+  --light-gray-2: hsl(0, 2%, 82%);
+  --marigold_75: hsla(42, 99%, 46%, 0.75);
+  --xiketic_90: hsla(280, 37%, 8%, 0.9);
+  --cultured-2: hsl(0, 0%, 97%);
+  --marigold: hsl(42, 99%, 46%);
+  --platinum: hsl(0, 0%, 89%);
+  --dim-gray: hsl(0, 0%, 42%);
+  --white_15: hsla(0, 0%, 100%, 0.15);
+  --white_10: hsla(0, 0%, 100%, 0.1);
+  --xiketic: hsl(277, 25%, 10%);
+  --silver: hsl(0, 0%, 78%);
+  --white: hsl(0, 0%, 100%);
+  --jet: hsl(236, 13%, 23%);
+
+  /**
+   * typography
+   */
+
+  --ff-oxanium: 'Oxanium', cursive;
+  --ff-poppins: 'Poppins', sans-serif;
+
+  --fs-1: 7rem;
+  --fs-2: 4.5rem;
+  --fs-3: 3.6rem;
+  --fs-4: 2.4rem;
+  --fs-5: 2.2rem;
+  --fs-6: 2rem;
+  --fs-7: 1.6rem;
+  --fs-8: 1.5rem;
+  --fs-9: 1.4rem;
+  --fs-10: 1.3rem;
+  --fs-11: 1.2rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 120px;
+
+  /**
+   * gradient
+   */
+
+  --gradient: radial-gradient(circle, hsl(250, 7%, 17%), hsl(250, 11%, 11%));
+
+  /**
+   * box shadow
+   */
+
+  --shadow-1: 0px 2px 8px 0px hsla(0, 0%, 0%, 0.2),
+              inset 0px 2px 8px 0px hsla(0, 0%, 0%, 0.4);
+  --shadow-2: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.4);
+  --shadow-3: 0px 5px 10px 1px hsla(219, 98%, 17%, 0.2);
+  --shadow-4: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.15);
+
+  /**
+   * transition
+   */
+
+  --transition: 0.25s ease;
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+}
+```
+
+**JavaScript** -
 ```javascript
-// Select element with the 'add_item' id.
-let add_item = document.getElementById('add_item');
+'use strict';
 
-// Listen for a click event on the html element 'add_item'.
-add_item.addEventListener('click', function() {
-    // Create a new element 'li'.
-    let li = document.createElement('li');
 
-    // Add the text 'Item' to the new element 'li'.
-    li.textContent = 'Item';
 
-    // Select the html element 'my_list'.
-    let my_list = document.querySelector('.my_list');
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-navbar-link]");
+const navbarToggler = document.querySelector("[data-navbar-toggler]");
 
-    // Add the new element 'li' to the html element 'my_list'.
-    my_list.appendChild(li);
+navbarToggler.addEventListener("click", function () {
+  navbar.classList.toggle("active");
+  this.classList.toggle("active");
 });
+
+for (let i = 0; i < navbarLinks.length; i++) {
+    navbarLinks[i].addEventListener("click", function () {
+        navbar.classList.toggle("active");
+        navbarToggler.classList.toggle("active");
+    });
+}
 ```
-
-
-
-MySQL -
-```ruby
--- Shows the number of records with the same score in the 'second_table'.
-SELECT `score`, COUNT(*) AS `number`
-FROM `second_table`
-GROUP BY `score`
-ORDER BY `number` DESC;
-```
-
-
-
-## Installation
-Provide step by step series of examples and explanations about how to get a development env running.
 
 
 
@@ -104,162 +231,17 @@ Provide step by step series of examples and explanations about how to get a deve
 
 
 
-Here's a general guide on how to use this repository for learning:
+Brief overview of use:
 
-1. **Clone the Repository**: First, you need to clone the repository to your local machine. You can do this by running the following command in
-your terminal:
-   ```bash
-   git clone https://github.com/GreyLeaf23/holbertonschool-higher_level_programming.git
-   ```
+* General understanding of the ruleset.
 
-2. **Explore the Projects**: Each directory in the repository represents a different project or exercise. You can navigate into each directory to see the specific tasks and challenges associated with that project.
+* Niche mechanics and concepts explained.
 
-3. **Read the README**: Most directories have a README file that provides context and instructions for the project. This is a good place to start before diving into the code.
+* Deck building and synergies.
 
-4. **Study the Code**: Look at the code files (.py for Python, .sql for SQL) to understand how they solve the tasks outlined in the README. Try to understand the logic and techniques used.
-
-5. **Run the Code**: Try running the code to see what it does. For Python files, you can usually run them with the command `python3 filename.py`. For SQL files, you'll need a SQL database like MySQL to run them.
-
-6. **Modify the Code**: Once you understand how the code works, try making some changes. This could be as simple as changing variable values, or as complex as adding new features or functions.
-
-7. **Check the Tests**: Some projects include test files that you can run to check your code. These are usually named `test_*` or `*_test`. Running these tests can help ensure your modifications didn't break anything.
-
-Remember, the key to learning from this repository is active engagement. Don't just passively read the code; run it, modify it, and experiment with it to truly understand it.
+* Community sharing.
 
 
 ## License
 
-MIT © [Christian Rosario]()# Holberton School - Higher Level Programming
-
-
-This is a fundational repository for learning languages considered 'Higher Level' at Holberton.
-The repository feautures Python as the main language of learning choice. But we also tap into SQL and Javascript learning.
-
-![Showcase](https://github.com/GreyLeaf23/holbertonschool-higher_level_programming/blob/main/small.png)
-
-## Motivation
-
-
-As part of the Holberton's curriculum, Python is the main language that will demonstrate the abilities that I've acquired as a software
-engineer.
-Demonstrate my understanding and continue practice of the higher level field.
-
-
-
-## Build status
-
-
-
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-
-## Code style
-
-
-
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-
-## Screenshots
-Include logo/demo screenshot etc.
-
-## Tech/framework used
-
-<b>Built with</b>
-- [Python](https://www.python.org/)
-- [Javascript](https://www.javascript.com/)
-- [MySQL](https://www.mysql.com/)
-
-## Features
-What makes your project stand out?
-
-## Code Example
-These are general functions for each of the featured languages.
-
-
-
-Python -
-```python
-#!/usr/bin/python3
-def fizzbuzz():
-    for num in range(1, 101):
-        if num % 3 == 0 and num % 5 == 0:
-            print("FizzBuzz", end=" ")
-        elif num % 3 == 0:
-            print("Fizz", end=" ")
-        elif num % 5 == 0:
-            print("Buzz", end=" ")
-        else:
-            print(num, end=" ")
-
-```
-
-
-Javascript -
-```javascript
-// Select element with the 'add_item' id.
-let add_item = document.getElementById('add_item');
-
-// Listen for a click event on the html element 'add_item'.
-add_item.addEventListener('click', function() {
-    // Create a new element 'li'.
-    let li = document.createElement('li');
-
-    // Add the text 'Item' to the new element 'li'.
-    li.textContent = 'Item';
-
-    // Select the html element 'my_list'.
-    let my_list = document.querySelector('.my_list');
-
-    // Add the new element 'li' to the html element 'my_list'.
-    my_list.appendChild(li);
-});
-```
-
-
-
-MySQL -
-```ruby
--- Shows the number of records with the same score in the 'second_table'.
-SELECT `score`, COUNT(*) AS `number`
-FROM `second_table`
-GROUP BY `score`
-ORDER BY `number` DESC;
-```
-
-
-
-## Installation
-Provide step by step series of examples and explanations about how to get a development env running.
-
-
-
-## How to use?
-
-
-
-Here's a general guide on how to use this repository for learning:
-
-1. **Clone the Repository**: First, you need to clone the repository to your local machine. You can do this by running the following command in
-your terminal:
-   ```bash
-   git clone https://github.com/GreyLeaf23/holbertonschool-higher_level_programming.git
-   ```
-
-2. **Explore the Projects**: Each directory in the repository represents a different project or exercise. You can navigate into each directory to see the specific tasks and challenges associated with that project.
-
-3. **Read the README**: Most directories have a README file that provides context and instructions for the project. This is a good place to start before diving into the code.
-
-4. **Study the Code**: Look at the code files (.py for Python, .sql for SQL) to understand how they solve the tasks outlined in the README. Try to understand the logic and techniques used.
-
-5. **Run the Code**: Try running the code to see what it does. For Python files, you can usually run them with the command `python3 filename.py`. For SQL files, you'll need a SQL database like MySQL to run them.
-
-6. **Modify the Code**: Once you understand how the code works, try making some changes. This could be as simple as changing variable values, or as complex as adding new features or functions.
-
-7. **Check the Tests**: Some projects include test files that you can run to check your code. These are usually named `test_*` or `*_test`. Running these tests can help ensure your modifications didn't break anything.
-
-Remember, the key to learning from this repository is active engagement. Don't just passively read the code; run it, modify it, and experiment with it to truly understand it.
-
-
-## License
-
-MIT © [Christian Rosario]()
+MIT © [Giovanni Carmona]() [Diego Gonzalez]() [Christian Rosario]() [Jose Nieves]()
