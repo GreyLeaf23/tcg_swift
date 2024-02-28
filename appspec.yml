@@ -3,6 +3,12 @@ os: linux
 files:
   - source: front-end/interface/index.html
     destination: /var/www/html/
+
+  - source: front-end/interface/assets/css/style.css
+    destination: /var/www/html/css/
+
+  - source: front-end/interface/assets/script.js
+    destination: /var/www/html/js/
 hooks:
   BeforeInstall:
     - location: server_scripts/install_dependencies
