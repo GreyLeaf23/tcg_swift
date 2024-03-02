@@ -4,9 +4,9 @@ files:
   - source: front-end/interface/index.html
     destination: /var/www/html/
   - source: front-end/interface/assets/css/style.css
-    destination: /var/www/html/css/
+    destination: /var/www/css/
   - source: front-end/interface/assets/js/script.js
-    destination: /var/www/html/js/
+    destination: /var/www/js/
 hooks:
   BeforeInstall:
     - location: server_scripts/install_dependencies
