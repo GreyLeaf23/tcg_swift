@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXIST Users (id INT, username VARCHAR (50), password VARCHAR(50));
