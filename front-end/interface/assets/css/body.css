@@ -1,7 +1,7 @@
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
+    width: 200px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -15,8 +15,16 @@
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: #717171;
+    display: block;
+  }
+
+  .sidenav p {
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 18px;
+    color: #e6e6e6;
     display: block;
   }
   
@@ -27,12 +35,12 @@
   
   /* Style page content */
   .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+    margin-left: 200px; /* Same as the width of the sidebar */
     top: 1;
-    padding-top: 120px;
-    padding-left: 50px;
-    padding-bottom: 30px;
+    padding-top: 110px;
+    padding-left: 40px;
+    padding-RIGHT: 40px;
+    padding-bottom: 10px;
 
     h1 {
         color: #d3b04e;
