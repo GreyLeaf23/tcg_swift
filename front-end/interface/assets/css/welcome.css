@@ -1,0 +1,46 @@
+  /* Style page content */
+  .main {
+    top: 1;
+    padding-top: 18%;
+    padding-left: 40px;
+    padding-RIGHT: 40px;
+    padding-bottom: 10px;
+
+    h1 {
+        color: #d3b04e;
+        font-size: 50px;
+    }
+    h2 {
+        color:bisque;
+    }
+    h3 {
+        color:#796a4a;
+    }
+    p {
+        color: #bdb7ac;
+    }
+    button {
+        font: 40px;
+        border: 3px solid #d6ba6e;
+        background-color: bisque;
+        color: #a38635;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    button:hover {
+        background-color: rgb(160, 141, 118);
+        border: 3px solid #6b5d36;
+        color: #dbbb64;
+    }
+    a {
+        padding-bottom: 5px;
+    }
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
