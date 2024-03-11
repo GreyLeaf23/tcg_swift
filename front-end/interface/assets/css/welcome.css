@@ -1,10 +1,23 @@
+body {
+    background-image: url();
+    background-size:auto;
+    border: 1% solid #000000;
+}
+
+
+section {
+    margin: 7% 7% 7% 7%;
+    padding: 8% 8% 8% 8%;
+    background-color: #28273542;
+}
+
+
   /* Style page content */
   .main {
     top: 1;
-    padding-top: 18%;
-    padding-left: 40px;
-    padding-RIGHT: 40px;
-    padding-bottom: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #1615203b;
 
     h1 {
         color: #d3b04e;
@@ -19,7 +32,7 @@
     p {
         color: #bdb7ac;
     }
-    button {
+    .Pokemon {
         font: 40px;
         border: 3px solid #d6ba6e;
         background-color: bisque;
@@ -29,18 +42,42 @@
         padding-top: 2px;
         padding-bottom: 2px;
     }
-    button:hover {
+    .Pokemon:hover {
         background-color: rgb(160, 141, 118);
         border: 3px solid #6b5d36;
         color: #dbbb64;
     }
+    .Magic {
+        font: 40px;
+        background-color: rgb(17, 17, 17);
+        border: 3px solid #000000;
+        color: #313131;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .Magic:hover {
+        background-color: rgb(7, 7, 7);
+        border: 3px solid #070707;
+        color: #1a1a1a;
+    }
+    .Yugioh {
+        font: 40px;
+        background-color: rgb(17, 17, 17);
+        border: 3px solid #000000;
+        color: #313131;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .Yugioh:hover {
+        background-color: rgb(7, 7, 7);
+        border: 3px solid #070707;
+        color: #1a1a1a;
+    }
     a {
         padding-bottom: 5px;
     }
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
   }
