@@ -1,0 +1,93 @@
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 265px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #282735; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 190px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #717171;
+    display: block;
+  }
+
+  .sidenav p {
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 18px;
+    color: #e6e6e6;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .image-container {
+    margin-left: 265px; /* Same as the width of the sidebar */
+    top: 1;
+    padding-left: 40px;
+    padding-RIGHT: 40px;
+    padding-bottom: 10px;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 265px; /* Same as the width of the sidebar */
+    top: 1;
+    padding-top: 110px;
+    padding-left: 40px;
+    padding-RIGHT: 40px;
+    padding-bottom: 10px;
+
+    h1 {
+        color: #d3b04e;
+    }
+    h2 {
+        color:bisque;
+    }
+    h3 {
+        color:#796a4a;
+    }
+    p {
+        color: #bdb7ac;
+    }
+
+    div {
+      height: 70%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      float: left;
+      border-left: 1px solid #bdb7ac;
+      border-right: 1px solid #bdb7ac;
+      width: 25%;
+    }
+    img {
+      width: 90%;
+      padding-bottom: 6px;
+    }
+
+    button {
+      padding-left: 4px;
+      padding-right: 4px;
+      color: #dddddd;
+      border: 2px solid rgb(61, 61, 61);
+      background-color: #797979;
+    }
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

@@ -1,0 +1,315 @@
+<!DOCTYPE html>	
+<html lang="en">	
+<head>	
+    <meta charset="UTF-8">	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title>Pokémon Guide</title>	
+
+    <!--	
+        - Favicon	
+    -->	
+    <link rel="shortcut icon" href="./pokeball-favicon2.jpg" type="image/jpg+xml">	
+
+    <!--	
+        - Custom css link	
+    -->	
+    <link rel="stylesheet" href="./assets/css/style.css">	
+    <link rel="stylesheet" href="./assets/css/body.css">	
+
+    <!--	
+        - Google font link	
+    -->	
+    <link rel="preconnect" href="https://fonts.googleapis.com">	
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
+    <link	
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"	
+    rel="stylesheet">	
+
+    <!--	
+        - Preload Images	
+    -->	
+</head>	
+
+<body>	
+
+    <!--	
+        - Header	
+    -->	
+
+    <header class="header">	
+
+        <div class="header-top">	
+            <div class="container">	
+
+                <div class="countdown-text">	
+                    Release Date Of Our Demo Project!<span class="span skewBg">TBD</span>	
+                </div>	
+
+                <div class="social-wrapper">	
+
+                    <p class="social-title">Follows us on :</p>	
+
+                    <ul class="social-list">	
+
+                        <li>	
+                            <a href="https://youtu.be/dQw4w9WgXcQ?si=B_JY3RlkItONyMMZ" class="social-link">	
+                                <ion-icon name="logo-facebook"></ion-icon>	
+                            </a>	
+                        </li>	
+
+                        <li>	
+                            <a href="https://github.com/GreyLeaf23/Demo-Project" class="social-link">	
+                                <ion-icon name="logo-github"></ion-icon>	
+                            </a>	
+                        </li>	
+
+                        <li>	
+                            <a href="https://youtu.be/hhuEsj93Q1U?si=EZo2oN8bojJnk3Da" class="social-link">	
+                                <ion-icon name="logo-linkedin"></ion-icon>	
+                            </a>	
+                        </li>	
+
+                        <li>	
+                            <a href="https://www.youtube.com/watch?v=AY2E3R1oh8E" class="social-link">	
+                                <ion-icon name="logo-twitter"></ion-icon>	
+                            </a>	
+                        </li>	
+
+
+                    </ul>	
+
+
+                </div>	
+        </div>	
+
+        <div class="header-bottom skewBg" data-header>	
+            <div class="container">	
+
+                <a href="#" class="logo">Pokémon Guide</a>	
+
+                <nav class="navbar" data-navbar>	
+                    <ul class="navbar-list">	
+
+                        <li class="navbar-item">	
+                            <a href="./welcome.html" class="navbar-link skewBg" data-nav-link>Home</a>	
+                        </li>	
+
+                        <li class="navbar-item">	
+                            <a href="#swift" class="navbar-link skewBg" data-nav-link>Swift</a>	
+                        </li>	
+
+                        <li class="navbar-item">	
+                            <a href="./deck_builder.html" class="navbar-link skewBg" data-nav-link>Decks</a>	
+                        </li>	
+
+                        <li class="navbar-item">	
+                            <a href="./contact.html" class="navbar-link skewBg" data-nav-link>Contact</a>	
+                        </li>	
+
+                    </ul>	
+                </nav>	
+
+                <div class="header-actions">	
+
+                    <button class="search-btn" aria-label="open search" data-search-toggler>	
+                        <ion-icon name="search-outline"></ion-icon>	
+                    </button>	
+
+                    <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>	
+                        <ion-icon name="menu-outline" class="menu"></ion-icon>	
+                        <ion-icon name="close-outline" class="close"></ion-icon>	
+                    </button>	
+
+                </div>	
+
+            </div>	
+        </div>	
+
+    </header>	
+
+
+
+    <!--	
+        - #Search Box	
+    -->	
+
+    <div class="search-container" data-search-box>	
+
+        <div class="input-wrapper">	
+            <input type="search" name="search" aria-label="search" placeholder="Search here..."	
+            class="search-field">	
+
+            <button class="search-submit" aria-label="submit search" data-search-toggler>	
+                <ion-icon name="search-outline"></ion-icon>	
+            </button>	
+
+            <button class="search-close" aria-label="close search" data-search-toggler></button>	
+        </div>	
+
+    </div>	
+
+    <!--
+        - Custom js link
+    -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!--	
+        - Ionicon link	
+    -->	
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>	
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>	
+
+
+
+    <!--	
+        - Main Body	
+    -->	
+
+    <main>	
+        <!-- Sidenav -->	
+        <div class="sidenav">	
+            <a href="#ET">Enegy types</a>	
+            <a href="#PC">Parts of the Card</a>	
+            <a href="#CT">Card Types</a>	
+            <details>	
+                <summary><p>Playing the Game</p></summary>	
+                <a href="#HW">How to Win</a>	
+                <a href="#SUP">Setting Up to Play</a>	
+            </details>	
+            <a href="#PT">Parts of a Turn</a>	
+            <details>	
+                <summary><p>Pokémon Checkup & Status Conditions</p></summary>	
+                <a href="#C">Confused</a>	
+                <a href="#PA">Paralyzed/Asleep</a>	
+                <a href="#PB">Poisoned/Burned</a>	
+                <a href="#RSC">Removing Special Conditions</a>	
+            </details>	
+
+        </div>	
+
+        <!-- Page Content -->	
+        <div class="main">	
+            <h1 id="ET">Energy types:</h1>	
+            <p>&emsp;&emsp;Pokémon need energy to use their attacks and/or abilities.</p>	
+            <br>	
+            <img src="./assets/images/Mockup_Image.png" alt="Mockup" style="width:720px;height:220px">	
+            <br>	
+
+            <h1 id="PC">Parts of a every Pokémon Card:</h1>	
+            <br>	
+            <h2>Pokémon Cards:</h2>	
+            <p>&emsp;&emsp;<bold>Pokémon type:</bold> This determines the type to apply when attacking.</p>	
+            <p>&emsp;&emsp;<bold>Hp:</bold> This is the innate max amount of health points a Pokémon card has.</p>	
+            <p>&emsp;&emsp;<bold>Stage:</bold> The current stage of evolution, it goes in this order: Basic, Stage 1 and Stage 2.</p>	
+            <p>&emsp;&emsp;<bold>Evolves from:</bold> Non-Basic Pokémon tell you which Pokémon needs to be in play for them to be placed in the board.</p>	
+            <p>&emsp;&emsp;<bold>Attacks:</bold> Moves the Pokémon can use.</p>	
+            <br>	
+            <h2>Trainer Cards:</h2>	
+            <p>&emsp;&emsp;<bold>Card name:</bold> The name of the card.</p>	
+            <p>&emsp;&emsp;<bold>Trainer type:</bold> The type of card it is, these include: Item, Supporters, Stadium and Pokémon tools.</p>	
+            <br>	
+            <img src="./assets/images/Mockup_Image.png" alt="Mockup" style="width:720px;height:380px">	
+            <br>	
+
+            <h1 id="CT">3 Card Types</h1>	
+            <br>	
+            <h2>You’ll find 3 different types of cards in the Pokémon TCG:</h2>	
+            <br>	
+            <h3><bold>1) Pokémon</bold></h3>	
+            <p>&emsp;&emsp;Pokémon cards are the main cards of a deck, which are used to attack your opponent’s Pokémon. The game revolves around the Pokémon your deck has.</p>	
+            <br>	
+            <h3><bold>2) Energy Cards</bold></h3>	
+            <p>&emsp;&emsp;Most of the time, Pokémon can’t attack without Energy cards! You’ll need to match the symbols of the attack cost to the Energy card, but any type of Energy can be used for Colorless Energy.</p>	
+            <br>	
+            <h3><bold>3) Trainer Cards</bold></h3>	
+            <p>&emsp;&emsp;If the deck is the vehicle, the trainer cards are the engine. These cards allow you to do a multitude of things in your turn, which allows you to speed up the process of getting energy cards, tools, and evolutions. They are very diverse in terms of uses and will determine how good your deck is.</p>	
+            <br>	
+            <img src="./assets/images/Mockup_Image.png" alt="Mockup" style="width:720px;height:380px">	
+            <br>	
+
+            <h1>Playing the Game</h1>	
+            <br>	
+            <h2 id="HW">How to Win the Game</h2>	
+            <br>	
+            <h3>You can win the game in 3 ways:</h3>	
+            <p>&emsp;&emsp;1) Obtain all of your Prize cards.</p>	
+            <p>&emsp;&emsp;2) Knock Out all of your opponent’s Pokémon in play.</p>	
+            <p>&emsp;&emsp;3) If your opponent has no cards left in their deck at the beginning of their turn.</p>	
+            <br>	
+            <h2 id="SUP">Setting Up to Play</h2>	
+            <br>	
+            <p>1) Flip a coin. The winner of the coin flip decides which player goes first.</p>	
+            <p>2) Shuffle your 60-card deck and draw the top 7 cards. </p>	
+            <p>3) Check to see if you have any Basic Pokémon in your hand. </p>	
+            <p>4) Put one of your Basic Pokémon face down as your Active Pokémon.</p>	
+            <p>5) Put up to 5 more Basic Pokémon face down on your Bench. </p>	
+            <p>&emsp;&emsp;• If you don’t have any Basic Pokémon, you will do a mulligan:</p>	
+            <p>&emsp;&emsp;&emsp;&emsp; Reveal your hand to your opponent.</p>	
+            <p>&emsp;&emsp;&emsp;&emsp; Shuffle your hand back into the deck.</p>	
+            <p>&emsp;&emsp;&emsp;&emsp; Draw 7 cards.</p>	
+            <p>&emsp;&emsp;&emsp;&emsp; Repeat until you have a basic Pokémon.</p>	
+            <p>&emsp;&emsp;&emsp;&emsp; And for each mulligan, your opponent can draw a additional card.</p>	
+            <p>6) Put the top 6 cards of your deck off to the side face down as your Prize cards.</p>	
+            <p>7) Both players flip their Active and Benched Pokémon face up and start the game!</p>	
+            <br>	
+            <img src="./assets/images/Mockup_Image.png" alt="Mockup" style="width:720px;height:380px">	
+            <br>	
+
+            <h1 id="PT">Parts of a Turn</h1>	
+            <br>	
+            <h2>Each turn has 3 main parts:</h2>	
+            <br>	
+            <h3>1) Draw a card.</h3>	
+            <br>	
+            <h3>2) Do any of the following actions in any order:</h3>	
+            <p>&emsp;&emsp;A. Put Basic Pokémon cards from your hand onto your Bench (as many as you want, up to 5).</p>	
+            <p>&emsp;&emsp;B. Evolve your Pokémon (as many as you want) (you may not evolve a Pokémon that was placed in the same turn).</p>	
+            <p>&emsp;&emsp;C. Attach an Energy card from your hand to one of your Pokémon (once per turn).</p>	
+            <p>&emsp;&emsp;D. Play Trainer cards (as many as you want, but only one Supporter card and one Stadium card per turn).</p>	
+            <p>&emsp;&emsp;E. Retreat your Active Pokémon (only once per turn).</p>	
+            <p>&emsp;&emsp;F. Use Abilities (as many as you want).</p>	
+            <br>	
+            <h3>3) Attack. Then, end your turn.</h3>	
+            <br>	
+            <img src="./assets/images/Mockup_Image.png" alt="Mockup" style="width:720px;height:380px">	
+            <br>	
+
+            <h1>Pokémon Checkup and Status Conditions</h1>	
+            <h3>1) Poisoned</h3>	
+            <h3>2) Burned</h3>	
+            <h3>3) Asleep</h3>	
+            <h3>4) Paralyzed</h3>	
+            <br>	
+            <p>If a card played states that its effect happens during Pokémon Checkup (or between turn) if stated in the card. You can check Special conditions in the order of: Other Effects (card effects) then Special Conditions or in reverse. But you can’t mix them, i.e. Special Conditions, Other Effects & Special Conditions.</p>	
+            <p>If a Pokémon during Pokémon Checkup gets knocked out, the player must move a new Pokémon to the Active Spot and the opponent takes the appropriate amount of Prize cards.</p>	
+            <br>	
+            <h2 id="C">Confused</h2>	
+            <p>Flip the card upside down. When attacking, you must flip a coin. if its heads, the attack works normally. If its tails, the attack fails, and you put 3 damage counters on the Pokémon.</p>	
+            <br>	
+            <h2 id="PA">Paralyzed/Asleep</h2>	
+            <p>Turn the card clockwise. The Pokémon cannot attack or retreat (unless it retreats through an item or trainer card, or the effect of an ability on another Pokémon). After the turn is over, it recovers from the effect.</p>	
+            <br>	
+            <h2 id="PB">Poisoned/Burned</h2>	
+            <p>Put a Poison/Burn marker on the card. During Pokémon Checkup, put a damage counter on the Pokémon. The card cannot be afflicted with multiple Poison/Burn markers. The new Poison/Burn will replace the old one.</p>	
+            <br>	
+            <h2 id="RSC">Removing Special Conditions</h2>	
+            <p>It can be removed by evolving the Pokémon or moving it to the Bench.</p>	
+            <p>A Pokémon can only be Asleep, Paralyzed, or Confused, because all of these effects turning the card. The last one to be afflicted on the Pokémon is the one that will take effect. Poison and Burn do stack. Thus, a Pokémon to be Burned, Poison and Asleep all at the same time.</p>	
+            <br>	
+        </div>	
+    </main>	
+
+
+
+    <!--	
+        - Footer	
+    -->	
+
+    <footer>	
+
+    </footer>	
+</body>	
+
+</html>

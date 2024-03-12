@@ -1,0 +1,53 @@
+
+/* Style page content */
+  .main {
+    top: 1;
+    padding-top: 110px;
+    padding-left: 40px;
+    padding-RIGHT: 40px;
+    padding-bottom: 10px;
+
+    h1 {
+        color: #d3b04e;
+    }
+    h2 {
+        color:bisque;
+    }
+    h3 {
+        color:#796a4a;
+    }
+    p {
+        color: #0051ff;
+    }
+    
+    div {
+        width: 25%;
+        height: 70%;
+        padding-top: 11%;
+        padding-bottom: 11%;
+        float: left;
+        border-left: 1px solid #bdb7ac;
+        border-right: 1px solid #bdb7ac;
+      }
+      
+      #gio {
+        margin-top: 25%;
+      }
+      
+      #jose {
+        margin-top: 25%;
+      }
+      
+      #diego {
+        margin-top: 25%;
+      }
+      
+      #chris {
+        margin-top: 25%;
+      }
+
+      img {
+        width: 220px;
+        border-radius: 50%;
+      }
+  }

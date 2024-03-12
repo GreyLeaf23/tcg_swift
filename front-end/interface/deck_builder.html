@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Builder</title>
+
+    <!--
+        - Favicon
+    -->
+    <link rel="shortcut icon" href="./pokeball-favicon2.jpg" type="image/jpg+xml">
+
+    <!--
+        - Custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/deckbuilder.css">
+
+    <!--
+        - Google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!--
+        - Preload Images
+    -->
+</head>
+
+<body>
+
+    <!--
+        - Header
+    -->
+
+    <header class="header">
+
+        <div class="header-top">
+            <div class="container">
+
+                <div class="countdown-text">
+                    Release Date Of Our Demo Project!<span class="span skewBg">TBD</span>
+                </div>
+
+                <div class="social-wrapper">
+
+                    <p class="social-title">Follows us on :</p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="https://youtu.be/dQw4w9WgXcQ?si=B_JY3RlkItONyMMZ" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/GreyLeaf23/Demo-Project" class="social-link">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://youtu.be/hhuEsj93Q1U?si=EZo2oN8bojJnk3Da" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=AY2E3R1oh8E" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+
+                </div>
+        </div>
+
+        <div class="header-bottom skewBg" data-header>
+            <div class="container">
+
+                <a href="#" class="logo">Deck Builder</a>
+
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+
+                        <li class="navbar-item">
+                            <a href="./welcome.html" class="navbar-link skewBg" data-nav-link>Home</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#swift" class="navbar-link skewBg" data-nav-link>Swift</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="./deck_builder.html" class="navbar-link skewBg" data-nav-link>Decks</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="./contact.html" class="navbar-link skewBg" data-nav-link>Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+
+                    <button class="search-btn" aria-label="open search" data-search-toggler>
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                    <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                        <ion-icon name="menu-outline" class="menu"></ion-icon>
+                        <ion-icon name="close-outline" class="close"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <!--
+        - #Search Box
+    -->
+
+    <div class="search-container" data-search-box>
+
+        <div class="input-wrapper">
+            <input type="search" name="search" aria-label="search" placeholder="Search here..."
+            class="search-field">
+
+            <button class="search-submit" aria-label="submit search" data-search-toggler>
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <button class="search-close" aria-label="close search" data-search-toggler></button>
+        </div>
+
+    </div>
+
+
+
+    <!--
+        - Ionicon link
+    -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--
+        - Main Body
+    -->
+
+    <main>
+        <!-- Sidenav -->
+        <div class="sidenav">
+            <center><a id="totalCountContainer">Your Current Deck:</a></center>
+            <!-- Pokémon -->
+            <a id="totalNonTrainersContainer">
+                <p id="totalNonTrainers">Pokémon: 0</p>
+            </a>
+            <a id="counterContainer"></a>
+
+            <!-- Trainer Cards -->
+            <a id="totalTrainerContainer">
+                <p id="totalTrainer">Trainer: 0</p>
+            </a>
+            <a id="trainersContainer"></a>
+
+            <!-- Energy Cards-->
+            <a id="totalEnergyContainer">
+                <p id="totalEnergy">Energy: 0</p>
+            </a>
+            <a id="energyContainer"></a>
+
+            <!-- Total Cards -->
+            <a id="totalCountContainer"><p id="totalCount">Total Cards: 0</p></a>
+            
+        </div>
+        
+
+        <script>
+            var totalCountSpan = document.getElementById('totalCount');
+            var totalCount = 0;
+            var totalNonTrainersSpan = document.getElementById('totalNonTrainers');
+            var totalNonTrainersCount = 0;
+            var totalEnergySpan = document.getElementById('totalEnergy');
+            var totalEnergyCount = 0;
+            var totalTrainerSpan = document.getElementById('totalTrainer');
+            var totalTrainerCount = 0;
+        
+            // Function to capitalize the first letter of each word, except "ex" and capitalize the letter following a "{"
+            function capitalizeWordsExceptEx(string) {
+                return string.split(/[\s_]+/).map(function(word) {
+                    if (word.toLowerCase() === "ex") {
+                        return word.toLowerCase();
+                    } else if (word.toUpperCase() === "PAF" || word.toUpperCase() === "PAF" || word.toUpperCase() === "PH") {
+                        return word.toUpperCase();
+                    } else {
+                        let capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+                        // Check if the word has "{" and capitalize the next letter if exists
+                        let idx = capitalizedWord.indexOf("{");
+                        if (idx !== -1 && idx + 1 < capitalizedWord.length) {
+                            capitalizedWord = capitalizedWord.substring(0, idx + 1) + capitalizedWord.charAt(idx + 1).toUpperCase() + capitalizedWord.substring(idx + 2);
+                        }
+                        return capitalizedWord;
+                    }
+                }).join(' ');
+            }
+
+            // Function to update the total count and disable buttons if the total count exceeds 60
+            function updateTotalCount(count) {
+                totalCount += count;
+                if (totalCount >= 60) {
+                    totalCount = 60; // Limit total count to 60
+                    // Disable all buttons
+                    var buttons = document.getElementsByTagName("button");
+                    for (var i = 0; i < buttons.length; i++) {
+                        buttons[i].disabled = true;
+                    }
+                }
+                totalCountSpan.textContent = 'Total Cards: ' + totalCount;
+            }
+            
+            // Function to update the total non-trainers count
+            function updateTotalNonTrainersCount() {
+                var nonTrainersCount = document.querySelectorAll('#counterContainer p:not([id*="TRA-"]):not([id*="energy"])').length;
+                totalNonTrainersSpan.textContent = 'Pokémon: ' + nonTrainersCount;
+            }
+            
+            // Function to update the total energy cards count
+            function updateTotalEnergyCount() {
+                var energyCount = document.querySelectorAll('#energyContainer p[id*="energy"]').length;
+                totalEnergySpan.textContent = 'Energy: ' + energyCount;
+            }
+
+            // Function to update the total energy cards count
+            function updateTotalTrainerCount() {
+                var trainerCount = document.querySelectorAll('#trainersContainer p[id*="TRA-"]').length;
+                totalTrainerSpan.textContent = 'Trainer: ' + trainerCount;
+            }
+            
+            // Function to increment the counter and create/update the paragraph text
+            function incrementCount(id) {
+                var container = document.getElementById('counterContainer');
+                var countParagraph = document.getElementById(id);
+                
+                if (!countParagraph) {
+                    // If the paragraph doesn't exist, create it
+                    countParagraph = document.createElement('p');
+                    countParagraph.id = id;
+                    countParagraph.textContent = '1 ' + capitalizeWordsExceptEx(id.replace(/TRA-/g, '').replace(/_/g, ' '));
+                    container.appendChild(countParagraph);
+                } else {
+                    // If the paragraph already exists and count is less than 4, update its count
+                    var currentCount = parseInt(countParagraph.textContent.split(' ')[0]);
+                    if (currentCount < 4 || id.toLowerCase().includes('energy')) {
+                        countParagraph.textContent = (currentCount + 1) + ' ' + capitalizeWordsExceptEx(id.replace(/TRA-/g, '').replace(/_/g, ' '));
+                    } else {
+                        return; // Don't update total count if maximum count reached
+                    }
+                }
+                
+                // Check if the ID contains "TRA-"
+                if (id.includes('TRA-')) {
+                    // Move the paragraph to the trainers container
+                    var trainersContainer = document.getElementById('trainersContainer');
+                    trainersContainer.appendChild(countParagraph);
+                }
+
+                // Check if the ID contains "energy"
+                if (id.includes('energy')) {
+                    // Move the paragraph to the energy container
+                    var energyContainer = document.getElementById('energyContainer');
+                    energyContainer.appendChild(countParagraph);
+                }
+                
+                // Update total count
+                updateTotalCount(1);
+                
+                // Update total non-trainers count
+                updateTotalNonTrainersCount();
+                
+                // Update total energy cards count
+                updateTotalEnergyCount();
+
+                // Update total trainer cards count
+                updateTotalTrainerCount();
+            }
+        </script>
+        
+        
+
+        <!-- Page Content -->
+        <div class="main">
+
+            <div>
+                <center>
+                    <img src="./assets/images/cards/armarouge.png">
+                    <h3>Armarouge</h3>
+                    <button id="Armarouge" onclick="incrementCount('armarouge PAF 15')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/artazon.png">
+                    <h3>Artazon</h3>
+                    <button id="Artazon" onclick="incrementCount('TRA-artazon PAF 76')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/charcadet.png">
+                    <h3>Charcadet</h3>
+                    <button id="Charcadet" onclick="incrementCount('charcadet PAF 14')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/charizard.png">
+                    <h3>Charizard</h3>
+                    <button id="Charizard" onclick="incrementCount('charizard_ex PAF 54')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/charmander.png">
+                    <h3>Charmander</h3>
+                    <button id="Charmander" onclick="incrementCount('charmander PAF 7')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/charmeleon.png">
+                    <h3>Charmeleon</h3>
+                    <button id="Charmeleon" onclick="incrementCount('charmeleon PAF 8')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/chinchou.png">
+                    <h3>Chinchou</h3>
+                    <button id="Chinchou" onclick="incrementCount('chinchou PAF 20')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/clobbopus.png">
+                    <h3>Clobbopus</h3>
+                    <button id="Clobbopus" onclick="incrementCount('clobbopus PAF 51')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/cottonee.png">
+                    <h3>Cottonee</h3>
+                    <button id="Cottonee" onclick="incrementCount('cottonee PAF 34')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/electric_generator.png">
+                    <h3>Electric Generator</h3>
+                    <button id="Electric Generator" onclick="incrementCount('TRA-electric_generator PAF 79')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/forretress_ex.png">
+                    <h3>Forretress ex</h3>
+                    <button id="Forretress ex" onclick="incrementCount('forretress_ex PAF 2')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/frigibax.png">
+                    <h3>Frigibax</h3>
+                    <button id="Frigibax" onclick="incrementCount('frigibax PAF 17')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/grapploct.png">
+                    <h3>Grapploct</h3>
+                    <button id="Grapploct" onclick="incrementCount('grapploct PAF 52')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/iono.png">
+                    <h3>Iono</h3>
+                    <button id="Iono" onclick="incrementCount('TRA-iono PAF 80')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/iron_treads_ex.png">
+                    <h3>Iron Treads ex</h3>
+                    <button id="Iron Treads ex" onclick="incrementCount('iron_treads_ex PAF 66')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/lanturn.png">
+                    <h3>Lanturn</h3>
+                    <button id="Lanturn" onclick="incrementCount('lanturn PAF 21')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/lapras.png">
+                    <h3>Lapras</h3>
+                    <button id="Lapras" onclick="incrementCount('lapras PAF 16')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/locked_in_shiny_palafin.png">
+                    <h3>Locked in Shiny Palafin</h3>
+                    <button id="Locked in Shiny Palafin" onclick="incrementCount('palafin PAF 225')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/maushold.png">
+                    <h3>Maushold</h3>
+                    <button id="Maushold" onclick="incrementCount('maushold PAF 74')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/moonlit_hill.png">
+                    <h3>Moonlit Hill</h3>
+                    <button id="Moonlit Hill" onclick="incrementCount('TRA-moonlit_hill PAF 81')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/natu.png">
+                    <h3>Natu</h3>
+                    <button id="Natu" onclick="incrementCount('natu PAF 25')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/nemona's_backpack.png">
+                    <h3>Nemona's Backpack</h3>
+                    <button id="Nemona's Backpack" onclick="incrementCount('TRA-nemona\'s_backpack PAF 85')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/nest_ball.png">
+                    <h3>Nest Ball</h3>
+                    <button id="Nest Ball" onclick="incrementCount('TRA-nest_ball PAF 84')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/noibat.png">
+                    <h3>Noibat</h3>
+                    <button id="Noibat" onclick="incrementCount('noibat PAF 68')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/noivern_ex.png">
+                    <h3>Noivern ex</h3>
+                    <button id="Noivern ex" onclick="incrementCount('noivern_ex PAF 69')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/paldean_clodsire_ex.png">
+                    <h3>Paldean Clodsire ex</h3>
+                    <button id="Paldean Clodsire ex" onclick="incrementCount('paldean_clodsire_ex PAF 59')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/paldean_wooper.png">
+                    <h3>Paldean Wooper</h3>
+                    <button id="Paldean Wooper" onclick="incrementCount('paldean_wooper PAF 58')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/pikachu.png">
+                    <h3>Pikachu</h3>
+                    <button id="Pikachu" onclick="incrementCount('pikachu PAF 18')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/pineco.png">
+                    <h3>Pineco</h3>
+                    <button id="Pineco" onclick="incrementCount('pineco PAF 1')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/professor's_research.png">
+                    <h3>Professor's Research</h3>
+                    <button id="Professor's Research" onclick="incrementCount('TRA-professor\'s_research PAF 88')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/raichu.png">
+                    <h3>Raichu</h3>
+                    <button id="Raichu" onclick="incrementCount('raichu PAF 19')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/rare_candy.png">
+                    <h3>Rare Candy</h3>
+                    <button id="Rare Candy" onclick="incrementCount('TRA-rare_candy PAF 89')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/revavroom.png">
+                    <h3>Revavroom</h3>
+                    <button id="Revavroom" onclick="incrementCount('revavroom PAF 65')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/shiny_armarouge.png">
+                    <h3>Shiny Armarouge</h3>
+                    <button id="Shiny Armarouge" onclick="incrementCount('armarouge PAF 115')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/shiny_ceruledge.png">
+                    <h3>Shiny Ceruledge</h3>
+                    <button id="Shiny Ceruledge" onclick="incrementCount('ceruledge PAF 162')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/shiny_ditto.png">
+                    <h3>Shiny Ditto</h3>
+                    <button id="Shiny Ditto" onclick="incrementCount('ditto PAF 201')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/shiny_finizen.png">
+                    <h3>Shiny Finizen</h3>
+                    <button id="Shiny Finizen" onclick="incrementCount('finizen PAF 123')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/shiny_hoppip.png">
+                    <h3>Shiny Hoppip</h3>
+                    <button id="Shiny Hoppip" onclick="incrementCount('hoppip PAF 96')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/shiny_mew_ex.png">
+                    <h3>Shiny Mew ex</h3>
+                    <button id="Shiny Mew ex" onclick="incrementCount('mew_ex PAF 216')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/shiny_mimikyu.png">
+                    <h3>Shiny Mimikyu</h3>
+                    <button id="Shiny Mimikyu" onclick="incrementCount('mimikyu PAF 160')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/shiny_pachirisu.png">
+                    <h3>Shiny Pachirisu</h3>
+                    <button id="Shiny Pachirisu" onclick="incrementCount('pachirisu PAF 138')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/shiny_palafin.png">
+                    <h3>Shiny Palafin</h3>
+                    <button id="Shiny Palafin" onclick="incrementCount('palafin PAF 124')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/side_eye_penny.png">
+                    <h3>Side Eye Penny</h3>
+                    <button id="Side Eye Penny" onclick="incrementCount('TRA-penny PAF 239')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/tandemaus.png">
+                    <h3>Tandemaus</h3>
+                    <button id="Tandemaus" onclick="incrementCount('tandemaus PAF 73')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/technical_machine_crisis_punch.png">
+                    <h3>Technical Machine Crisis Punch</h3>
+                    <button id="Technical Machine Crisis Punch" onclick="incrementCount('TRA-technical_machine:_crisis_punch PAF 90 PH')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/toedscool.png">
+                    <h3>Toedscool</h3>
+                    <button id="Toedscool" onclick="incrementCount('toedscool PAF 4')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/toedscruel.png">
+                    <h3>Toedscruel</h3>
+                    <button id="Toedscruel" onclick="incrementCount('toedscruel_ex PAF 5')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/ultra_ball.png">
+                    <h3>Ultra Ball</h3>
+                    <button id="Ultra Ball" onclick="incrementCount('TRA-ultra_ball PAF 91')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/varoom.png">
+                    <h3>Varoom</h3>
+                    <button id="Varoom" onclick="incrementCount('varoom PAF 64')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/whimsicott.png">
+                    <h3>Whimsicott</h3>
+                    <button id="Whimsicott" onclick="incrementCount('whimsicott PAF 35')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+            <div>
+                <center>
+                    <img src="./assets/images/cards/zatu.png">
+                    <h3>Zatu</h3>
+                    <button id="Zatu" onclick="incrementCount('Xatu PAF 26')">ADD THIS CARD</button>
+                </center>
+            </div>
+            <div>
+                <center>
+                    <img src="./assets/images/cards/energy_fire.png">
+                    <h3>Fire Energy</h3>
+                    <button id="Fire Energy" onclick="incrementCount('basic_{R}_energy_energy_19')">ADD THIS CARD</button>
+                </center>
+            </div>
+            <div>
+                <center>
+                    <img src="./assets/images/cards/energy_water.png">
+                    <h3>Water Energy</h3>
+                    <button id="Water Energy" onclick="incrementCount('basic_{W}_energy_energy_20')">ADD THIS CARD</button>
+                </center>
+            </div>
+            
+
+        </div>
+    </main>
+
+
+
+    <!--
+        - Footer
+    -->
+    
+    <footer>
+
+    </footer>
+</body>
+
+</html>
