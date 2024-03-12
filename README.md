@@ -1,70 +1,246 @@
-# Getting Started with Create React App
+# TCG Swift - Into The Action!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A learning experience to swiftly enjoy the world of trading card games!
 
-## Available Scripts
+![TCG](https://github.com/GreyLeaf23/Demo-Project/blob/master/tcg_logo2.jpg)
 
-In the project directory, you can run:
+## Motivation
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+One thing that everything seems to have in common is the rapid change that everything is going under, and card games are no exception.
+With so many concepts and mechanics being release, is difficult for players to keep up with all the jargon that the game brings, especially for newer players.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It feels like you're studying the game instead of.... PLAYING IT.
 
-### `npm test`
+This is the reasoning of creating an experience that allows players to enjoy all the richness that trading card games have to offer, for anyone
+of any age and skill!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Build status
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
 
-### `npm run eject`
+## Code style
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
+Include logo/demo screenshot etc.
 
-## Learn More
+## Tech/framework used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<b>Built with</b>
+- [Python](https://www.python.org/)
+- [Javascript](https://www.javascript.com/)
+- [MySQL](https://www.mysql.com/)
+- [HTML](https://html.com/)
+- [CSS](https://cssprofile.collegeboard.org/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features
+What makes your project stand out?
 
-### Code Splitting
+## Code Example
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+All of the shown examples are snippets of the code architecture:
 
-### Analyzing the Bundle Size
+**HTML** -
+```html
+<div class="header-bottom skewBg" data-header>
+            <div class="container">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+                <a href="#" class="logo">TCG SWIFT</a>
 
-### Making a Progressive Web App
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+                        <li class="navbar-item">
+                            <a href="#home" class="navbar-link skewBg" data-nav-link>Home</a>
+                        </li>
 
-### Advanced Configuration
+                        <li class="navbar-item">
+                            <a href="#features" class="navbar-link skewBg" data-nav-link>Features</a>
+                        </li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+                        <li class="navbar-item">
+                            <a href="#swift" class="navbar-link skewBg" data-nav-link>Swift</a>
+                        </li>
 
-### Deployment
+                        <li class="navbar-item">
+                            <a href="#decks" class="navbar-link skewBg" data-nav-link>Decks</a>
+                        </li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+                        <li class="navbar-item">
+                            <a href="#players" class="navbar-link skewBg" data-nav-link>Players</a>
+                        </li>
 
-### `npm run build` fails to minify
+                        <li class="navbar-item">
+                            <a href="#blog" class="navbar-link skewBg" data-nav-link>Blog</a>
+                        </li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+
+                    <button class="search-btn" aria-label="open search" data-search-toggler>
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                    <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                        <ion-icon name="menu-outline" class="menu"></ion-icon>
+                        <ion-icon name="close-outline" class="close"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+```
+
+**CSS** -
+```css
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * colors
+   */
+
+  --rich-black-fogra-29_95: hsla(222, 18%, 11%, 0.95);
+  --raisin-black-1: hsl(0, 0%, 16%);
+  --raisin-black-2: hsl(236, 17%, 17%);
+  --raisin-black-3: hsl(280, 11%, 11%);
+  --raisin-black-4: hsl(280, 8%, 15%);
+  --english-violet: hsl(274, 21%, 23%);
+  --eerie-black-1: hsl(277, 25%, 10%);
+  --eerie-black-2: hsl(280, 7%, 8%);
+  --roman-silver: hsl(220, 6%, 59%);
+  --quick-silver: hsl(0, 1%, 65%);
+  --light-gray-1: hsl(0, 0%, 80%);
+  --light-gray-2: hsl(0, 2%, 82%);
+  --marigold_75: hsla(42, 99%, 46%, 0.75);
+  --xiketic_90: hsla(280, 37%, 8%, 0.9);
+  --cultured-2: hsl(0, 0%, 97%);
+  --marigold: hsl(42, 99%, 46%);
+  --platinum: hsl(0, 0%, 89%);
+  --dim-gray: hsl(0, 0%, 42%);
+  --white_15: hsla(0, 0%, 100%, 0.15);
+  --white_10: hsla(0, 0%, 100%, 0.1);
+  --xiketic: hsl(277, 25%, 10%);
+  --silver: hsl(0, 0%, 78%);
+  --white: hsl(0, 0%, 100%);
+  --jet: hsl(236, 13%, 23%);
+
+  /**
+   * typography
+   */
+
+  --ff-oxanium: 'Oxanium', cursive;
+  --ff-poppins: 'Poppins', sans-serif;
+
+  --fs-1: 7rem;
+  --fs-2: 4.5rem;
+  --fs-3: 3.6rem;
+  --fs-4: 2.4rem;
+  --fs-5: 2.2rem;
+  --fs-6: 2rem;
+  --fs-7: 1.6rem;
+  --fs-8: 1.5rem;
+  --fs-9: 1.4rem;
+  --fs-10: 1.3rem;
+  --fs-11: 1.2rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 120px;
+
+  /**
+   * gradient
+   */
+
+  --gradient: radial-gradient(circle, hsl(250, 7%, 17%), hsl(250, 11%, 11%));
+
+  /**
+   * box shadow
+   */
+
+  --shadow-1: 0px 2px 8px 0px hsla(0, 0%, 0%, 0.2),
+              inset 0px 2px 8px 0px hsla(0, 0%, 0%, 0.4);
+  --shadow-2: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.4);
+  --shadow-3: 0px 5px 10px 1px hsla(219, 98%, 17%, 0.2);
+  --shadow-4: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.15);
+
+  /**
+   * transition
+   */
+
+  --transition: 0.25s ease;
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+}
+```
+
+**JavaScript** -
+```javascript
+'use strict';
+
+
+
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-navbar-link]");
+const navbarToggler = document.querySelector("[data-navbar-toggler]");
+
+navbarToggler.addEventListener("click", function () {
+  navbar.classList.toggle("active");
+  this.classList.toggle("active");
+});
+
+for (let i = 0; i < navbarLinks.length; i++) {
+    navbarLinks[i].addEventListener("click", function () {
+        navbar.classList.toggle("active");
+        navbarToggler.classList.toggle("active");
+    });
+}
+```
+
+
+
+## How to use?
+
+
+
+Brief overview of use:
+
+* General understanding of the ruleset.
+
+* Niche mechanics and concepts explained.
+
+* Deck building and synergies.
+
+* Community sharing.
+
+
+## License
+
+MIT © [Giovanni Carmona]() [Diego Gonzalez]() [Christian Rosario]() [Jose Nieves]()
