@@ -1,1 +1,6 @@
-CREATE TABLE IF NOT EXIST Users (id INT, username VARCHAR (50), password VARCHAR(50));
+CREATE TABLE Users (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(30) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    reg_date TIMESTAMP
+);
