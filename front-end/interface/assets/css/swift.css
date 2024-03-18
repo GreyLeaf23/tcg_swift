@@ -1,8 +1,58 @@
 .main {
-    margin-left: 265px; /* Same as the width of the sidebar */
     top: 1;
     padding-top: 110px;
     padding-left: 40px;
     padding-RIGHT: 40px;
     padding-bottom: 10px;
+
+    h1 {
+        color: #d3b04e;
+    }
+    h2 {
+      color:bisque;
+    }
+    h3 {
+      color:#796a4a;
+    }
+    p {
+    color: #bdb7ac;
+    }
+    input {
+      color: #0051ff;
+    }
+
+    button {
+        font: 40px;
+        border: 3px solid #d6ba6e;
+        background-color: bisque;
+        color: #a38635;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    button:hover {
+        background-color: rgb(160, 141, 118);
+        border: 3px solid #6b5d36;
+        color: #dbbb64;
+    }
+
+    input {
+        width: 30%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 0.5%;
+        border: 2px solid #333;
+        border-radius: 6px;
+    }
+
+    input:hover {
+        border: 2px solid #33333300;
+    }
+
+    iframe {
+        margin-top: 2%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
 }
