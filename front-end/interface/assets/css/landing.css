@@ -40,12 +40,21 @@
         }
 
         .top {
-            padding-right: 40%;
-            padding-top: 4%;
-            padding-bottom: 5%;
             width: 100%;
             float: left;
             background-color: #251e28de;
+
+            center {
+                width: 50%;
+                float: left;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+
+            #divide1 {
+                padding-top: 6.5%;
+            }
+
         }
         .middle {
             padding-left: 19%;
