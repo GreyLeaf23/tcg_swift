@@ -15,6 +15,7 @@
         - Custom css link
     -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/swift.css">
 
     <!--
         - Google font link
@@ -163,7 +164,50 @@
 
     <!-- Main Part of the Website-->
     <main class="main">
+        <script>
+            // Array of Pokémon names and their corresponding video links
+            const pokemonData = [
+                { name: "Pikachu", videoLink: "https://www.youtube.com/embed/OhupTkhPoZM" },
+                { name: "Charmander", videoLink: "https://www.youtube.com/embed/VIDEO_ID2" },
+                { name: "Palafin", videoLink: "https://www.youtube.com/embed/s28kXnnlumA" },
+                // Add more Pokémon and their video links as needed
+            ];
+        
+            function searchPokemon() {
+                // Get the value of the input field
+                const inputText = document.getElementById("pokemonSearch").value.trim();
+        
+                // Find the Pokémon in the array
+                const pokemon = pokemonData.find(p => p.name.toLowerCase() === inputText.toLowerCase());
+        
+                // Remove any existing iframe elements
+                const existingIframe = document.getElementById("videoPreview");
+                if (existingIframe) {
+                    existingIframe.remove();
+                }
+        
+                if (pokemon) {
+                    // Create a new iframe element
+                    const iframe = document.createElement("iframe");
+                    iframe.id = "videoPreview"; // Assign an ID to the iframe
+                    iframe.width = "560"; // Set the width of the iframe
+                    iframe.height = "315"; // Set the height of the iframe
+                    iframe.src = pokemon.videoLink; // Set the source of the iframe
+                    iframe.allowfullscreen = true; // Allow fullscreen mode
+        
+                    // Append the iframe to the 'video' div
+                    document.getElementById("video").appendChild(iframe);
+                } else {
+                    // If Pokémon not found, display an error message
+                    alert("Pokémon not found!");
+                }
+            }
+        </script>
 
+        <h1>TCG Swift Interface</h1>
+        <input type="text" id="pokemonSearch" placeholder="Enter Pokémon Name">
+        <button onclick="searchPokemon()">Search</button>
+        <div id="video"></div>
     </main>
 
     <!-- Footer of the Website-->
