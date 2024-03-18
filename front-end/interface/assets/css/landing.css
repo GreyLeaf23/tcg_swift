@@ -1,0 +1,113 @@
+.header-bottom {
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.322);
+  }
+
+/* Style page content */
+  .main {
+    top: 1;
+    padding-top: 80px;
+    padding-bottom: 112px;
+    font-size: 1.6vw;
+
+    h1 {
+        color: #d3b04e;
+        padding-bottom: 10px;
+    }
+    h2 {
+        color:bisque;
+        font-size: 2.8vw;
+    }
+    h3 {
+        color:#796a4a;
+    }
+    p {
+        color: #bdb7ac;
+        font-size: 1vw;
+    }
+
+    video {
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.322);
+    }
+
+    u {
+        color: #0051ff;
+    }
+
+    .content {
+        padding-bottom: 112px;
+        img {
+            width: 49%;
+        }
+
+        .top {
+            width: 100%;
+            float: left;
+            background-color: #251e28de;
+
+            center {
+                width: 50%;
+                float: left;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+
+            #divide1 {
+                padding-top: 6.5%;
+            }
+
+        }
+        .middle {
+            padding-left: 19%;
+            padding-top: 13%;
+            padding-bottom: 10%;
+            width: 100%;
+            float: left;
+            background-color: #2c2c3b;
+            box-shadow: 0px -10px 5px rgba(0, 0, 0, 0.322);
+            text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.452);
+
+            center {
+                display: inline-block;
+            }
+
+        }
+        .bottom {
+            padding-top: 6%;
+            padding-bottom: 13%;
+            width: 100%;
+            float: left;
+            background-color: #2c2c3b;
+            text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.452);
+
+            a {
+                font-size: 20px;
+                margin-top: 13%;
+            }
+        }
+        .video {
+            padding-bottom: 3%;
+            width: 100%;
+            float: left;
+            background-color: #2c2c3b;
+            box-shadow: 0px -10px 5px rgba(0, 0, 0, 0.322) inset;
+            text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.452);
+        }
+    }
+  }
+
+  #guides2 {
+    padding-top: 5.5%;
+  }
+  #deckbuilder2 {
+    padding-top: 5.5%;
+  }
+
+  .footer {
+    margin-top: 81%;
+    bottom: 0;
+    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    background-color: #242533;
+    box-shadow: 0px -10px 5px rgba(0, 0, 0, 0.322), 0px -34px #E9A401 inset;
+  }
