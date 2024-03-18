@@ -1,0 +1,71 @@
+h1 {
+  color: #d3b04e;
+}
+h2 {
+  color:bisque;
+}
+h3 {
+  color:#796a4a;
+}
+p {
+color: #bdb7ac;
+}
+u {
+  color: #0051ff;
+}
+#linkedin {
+  color:#284390;
+}
+#github {
+  color:#000000;
+}
+i {
+  text-shadow: 0px 0px 5px #ffffff34;
+}
+
+
+/* Style page content */
+  .main {
+    top: 1;
+    padding-top: 110px;
+    padding-left: 40px;
+    padding-RIGHT: 40px;
+    padding-bottom: 1%;
+    
+    div {
+        width: 25%;
+        height: 70%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        float: left;
+        border-left: 1px solid #bdb7ac;
+        border-right: 1px solid #bdb7ac;
+      }
+      
+      #gio:hover {
+        content:url("../../assets/images/headshots/Giovanni.jpg")
+      }
+      
+      #jose:hover {
+        content:url("../../assets/images/headshots/Jose.jpg")
+      }
+      
+      #diego:hover {
+        content:url("../../assets/images/headshots/Diego.jpg")
+      }
+      
+      #chris:hover {
+        content:url("../../assets/images/headshots/Christian.jpg")
+      }
+
+      img {
+        width: 80%;
+        border-radius: 50%;
+      }
+
+
+  }
+
+  footer {
+    padding-top: 30%;
+  }

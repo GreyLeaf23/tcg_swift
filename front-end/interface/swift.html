@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift</title>
+
+    <!--
+        - Favicon
+    -->
+    <link rel="shortcut icon" href="./pokeball-favicon2.jpg" type="image/jpg+xml">
+
+    <!--
+        - Custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/swift.css">
+
+    <!--
+        - Google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!--
+        - Preload Images
+    -->
+</head>
+
+<body>
+    <!--
+        - Header
+    -->
+
+    <header class="header">
+
+        <div class="header-top">
+            <div class="container">
+
+                <div class="countdown-text">
+                    Release Date Of Our Demo Project!<span class="span skewBg">TBD</span>
+                </div>
+
+                <div class="social-wrapper">
+
+                    <p class="social-title">Follows us on :</p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+
+                </div>
+        </div>
+
+        <div class="header-bottom skewBg" data-header>
+            <div class="container">
+
+                <a href="#" class="logo">Outside Sources</a>
+                <nav class="navbar" data-navbar>	
+                    <ul class="navbar-list">	
+
+                        <li class="navbar-item">	
+                            <a href="./welcome.html" class="navbar-link skewBg" data-nav-link>Begin Here</a>	
+                        </li>	
+
+                        <li class="navbar-item">	
+                            <a href="./swift.html" class="navbar-link skewBg" data-nav-link>Swift</a>	
+                        </li>	
+
+                        <li class="navbar-item">	
+                            <a href="./deck_builder.html" class="navbar-link skewBg" data-nav-link>Decks</a>	
+                        </li>	
+
+                        <li class="navbar-item">	
+                            <a href="./contact.html" class="navbar-link skewBg" data-nav-link>About</a>	
+                        </li>	
+
+                    </ul>	
+                </nav>	
+
+
+                <div class="header-actions">
+
+                    <button class="search-btn" aria-label="open search" data-search-toggler>
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                    <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                        <ion-icon name="menu-outline" class="menu"></ion-icon>
+                        <ion-icon name="close-outline" class="close"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <!--
+        - #Search Box
+    -->
+
+    <div class="search-container" data-search-box>
+
+        <div class="input-wrapper">
+            <input type="search" name="search" aria-label="search" placeholder="Search here..."
+            class="search-field">
+
+            <button class="search-submit" aria-label="submit search" data-search-toggler>
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <button class="search-close" aria-label="close search" data-search-toggler></button>
+        </div>
+
+    </div>
+
+
+
+    <!--
+        - Custom js link
+    -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!--
+        - Ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- Main Part of the Website-->
+    <main class="main">
+        <script>
+            // Array of Pokémon names and their corresponding video links
+            const pokemonData = [
+                { name: "Pikachu", videoLink: "https://www.youtube.com/embed/OhupTkhPoZM" },
+                { name: "Charmander", videoLink: "https://www.youtube.com/embed/VIDEO_ID2" },
+                { name: "Palafin", videoLink: "https://www.youtube.com/embed/s28kXnnlumA" },
+                // Add more Pokémon and their video links as needed
+            ];
+        
+            function searchPokemon() {
+                // Get the value of the input field
+                const inputText = document.getElementById("pokemonSearch").value.trim();
+        
+                // Find the Pokémon in the array
+                const pokemon = pokemonData.find(p => p.name.toLowerCase() === inputText.toLowerCase());
+        
+                // Remove any existing iframe elements
+                const existingIframe = document.getElementById("videoPreview");
+                if (existingIframe) {
+                    existingIframe.remove();
+                }
+        
+                if (pokemon) {
+                    // Create a new iframe element
+                    const iframe = document.createElement("iframe");
+                    iframe.id = "videoPreview"; // Assign an ID to the iframe
+                    iframe.width = "560"; // Set the width of the iframe
+                    iframe.height = "315"; // Set the height of the iframe
+                    iframe.src = pokemon.videoLink; // Set the source of the iframe
+                    iframe.allowfullscreen = true; // Allow fullscreen mode
+        
+                    // Append the iframe to the 'video' div
+                    document.getElementById("video").appendChild(iframe);
+                } else {
+                    // If Pokémon not found, display an error message
+                    alert("Pokémon not found!");
+                }
+            }
+        </script>
+
+        <h1>TCG Swift Interface</h1>
+        <input type="text" id="pokemonSearch" placeholder="Enter Pokémon Name">
+        <button onclick="searchPokemon()">Search</button>
+        <div id="video"></div>
+    </main>
+
+    <!-- Footer of the Website-->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
