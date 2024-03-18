@@ -1,0 +1,52 @@
+  .header-bottom {
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.322);
+  }
+
+/* Style page content */
+  .main {
+    top: 1;
+    padding-top: 180px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    font-size: 0.92vw;
+
+    h1 {
+        color: #d3b04e;
+    }
+    h2 {
+        color:bisque;
+    }
+    h3 {
+        color:#796a4a;
+    }
+    p {
+        color: #bdb7ac;
+    }
+
+    video {
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.322);
+    }
+
+    section {
+        width: 50%;
+        padding-bottom: 60px;
+        float: left;
+    }
+  }
+
+  #guides2 {
+    padding-top: 5.5%;
+  }
+  #deckbuilder2 {
+    padding-top: 5.5%;
+  }
+
+  .footer {
+    margin-top: 54.4%;
+    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    background-color: #242533;
+    box-shadow: 0px -10px 5px rgba(0, 0, 0, 0.322), 0px -34px #E9A401 inset;
+  }
