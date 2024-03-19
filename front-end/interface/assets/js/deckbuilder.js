@@ -31,10 +31,10 @@ function updateTotalCount(count) {
     totalCount += count;
     if (totalCount >= 60) {
         totalCount = 60; // Limit total count to 60
-        // Disable all buttons
-        var buttons = document.getElementsByTagName("button");
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].disabled = true;
+        // Disable buttons with class "main"
+        var mainButtons = document.querySelectorAll('.main button');
+        for (var i = 0; i < mainButtons.length; i++) {
+            mainButtons[i].disabled = true;
         }
     }
     totalCountSpan.textContent = 'Total Cards: ' + totalCount;
@@ -105,3 +105,28 @@ function incrementCount(id) {
     // Update total trainer cards count
     updateTotalTrainerCount();
 }
+
+
+
+//Clipboard copy
+document.getElementById("copyButton").addEventListener("click", function() {
+    var textToCopy = document.getElementById("copythis").innerText;
+    
+    // Create a textarea element to hold the text temporarily
+    var textarea = document.createElement("textarea");
+    textarea.value = textToCopy;
+    document.body.appendChild(textarea);
+    
+    // Select the text in the textarea
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); /* For mobile devices */
+
+    // Copy the selected text
+    document.execCommand("copy");
+    
+    // Remove the textarea
+    document.body.removeChild(textarea);
+
+    // Optionally, provide some feedback to the user
+    alert("Text copied to clipboard: " + textToCopy);
+});
