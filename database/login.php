@@ -6,10 +6,10 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
     $password = $_POST['password'];
     
     // Database connection details
-    $host = 'localhost'; // or your host, e.g., a remote IP or hostname
-    $dbname = 'TCG_Swift'; // your database name
-    $db_username = 'your_db_username'; // your database username
-    $db_password = 'your_db_password'; // your database password
+    $host = 'tcg-swift.cng62qqg8t3b.us-east-2.rds.amazonaws.com'; // or your host, e.g., a remote IP or hostname
+    $dbname = 'tcg-swift'; // your database name
+    $db_username = 'Tcg'; // your database username
+    $db_password = '4321Tcg$'; // your database password
     
     // Create connection
     $conn = new mysqli($host, $db_username, $db_password, $dbname);

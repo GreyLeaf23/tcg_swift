@@ -1,9 +1,9 @@
 <?php
 // Define database connection parameters
-$host = 'localhost'; // or your host, e.g., a remote IP or hostname
-$dbname = 'TCG_Swift';
-$username = 'db_username'; // your database username
-$password = 'db_password'; // your database password
+$host = 'tcg-swift.cng62qqg8t3b.us-east-2.rds.amazonaws.com'; // or your host, e.g., a remote IP or hostname
+$dbname = 'tcg-swift';
+$username = 'Tcg'; // your database username
+$password = '4321Tcg$'; // your database password
 
 // Create connection
 $conn = new mysqli($host, $username, $password, $dbname);
