@@ -76,14 +76,14 @@
       width: 90%;
       padding-bottom: 6px;
     }
+  }
 
-    button {
-      padding-left: 4px;
-      padding-right: 4px;
-      color: #dddddd;
-      border: 2px solid rgb(61, 61, 61);
-      background-color: #797979;
-    }
+  button {
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #dddddd;
+    border: 2px solid rgb(61, 61, 61);
+    background-color: #797979;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
