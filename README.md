@@ -2,7 +2,7 @@
 
 A learning experience to swiftly enjoy the world of trading card games!
 
-![TCG](https://github.com/GreyLeaf23/Demo-Project/blob/master/tcg_logo2.jpg)
+![TCG](https://github.com/GreyLeaf23/tcg_swift/blob/master/tcg-swift/front-end/assets/images/TCG_Swift_Logo.png)
 
 ## Motivation
 
