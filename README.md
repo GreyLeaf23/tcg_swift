@@ -15,6 +15,8 @@ It feels like you're studying the game instead of.... PLAYING IT.
 This is the reasoning of creating an experience that allows players to enjoy all the richness that trading card games have to offer, for anyone
 of any age and skill!
 
+Test out the actual website here at [tcgswift.click](http://tcgswift.click) and checkout the blogpost made for this project here: [Blog Post](https://www.linkedin.com/pulse/tcg-swift-giovanni-y-carmona-9rqbe).
+
 
 ## Build status
 
@@ -30,7 +32,7 @@ of any age and skill!
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 ## Screenshots
-Include logo/demo screenshot etc.
+![Landing Page](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)
 
 ## Tech/framework used
 
