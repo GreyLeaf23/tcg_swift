@@ -8,8 +8,7 @@ A learning experience to swiftly enjoy the world of trading card games!
 
 
 One thing that everything seems to have in common is the rapid change that everything is going under, and card games are no exception.
-With so many concepts and mechanics being release, is difficult for players to keep up with all the jargon that the game may bring game bring
-and this is more daunting for newer players.
+With so many concepts and mechanics being release, is difficult for players to keep up with all the jargon that the game brings, especially for newer players.
 
 It feels like you're studying the game instead of.... PLAYING IT.
 
