@@ -1,3 +1,6 @@
 node_modules
 cards-database-master
 coinflip.py
+package.json
+package-lock.json
+tcg_logo.png
