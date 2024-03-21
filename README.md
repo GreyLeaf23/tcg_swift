@@ -35,7 +35,7 @@ Test out the actual website here at [tcgswift.click](http://tcgswift.click) and 
 ![Landing Page](https://github.com/GreyLeaf23/tcg_swift/tcg-swift/front-end/assets/images/screenshots/main-page.png)
 ![Guide Page](https://github.com/GreyLeaf23/tcg_swift/tcg-swift/front-end/assets/images/screenshots/guide.png)
 ![Deck Builder Page](https://github.com/GreyLeaf23/tcg_swift/tcg-swift/front-end/assets/images/screenshots/deck-builder.png)
-![Outside Sources Page](https://github.com/GreyLeaf23/tcg_swift/tcg-swift/front-end/assets/images/screenshots/outside-sources.png)
+![Outside Sources Page](https://github.com/GreyLeaf23/tcg_swift/blob/master/tcg-swift/front-end/assets/images/screenshots/outside-sources.png)
 
 
 ## Tech/framework used
