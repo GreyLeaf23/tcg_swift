@@ -32,7 +32,11 @@ Test out the actual website here at [tcgswift.click](http://tcgswift.click) and 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 ## Screenshots
-![Landing Page](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)
+![Landing Page](https://github.com/GreyLeaf23/tcg_swift/tree/master/tcg-swift/front-end/assets/images/screenshots/main-page.png)
+![Guide Page](https://github.com/GreyLeaf23/tcg_swift/tree/master/tcg-swift/front-end/assets/images/screenshots/guide.png)
+![Deck Builder Page](https://github.com/GreyLeaf23/tcg_swift/tree/master/tcg-swift/front-end/assets/images/screenshots/deck-builder.png)
+![Outside Sources Page](https://github.com/GreyLeaf23/tcg_swift/tree/master/tcg-swift/front-end/assets/images/screenshots/outside-sources.png)
+
 
 ## Tech/framework used
 
