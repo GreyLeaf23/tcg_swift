@@ -53,7 +53,8 @@ Test out the actual website here at [tcgswift.click](http://tcgswift.click) and 
 - Make their own decks and export them into the Official Pokemon TCG Live application.
 - Find External Sources on Decks for specific Pokemons that may be of interest to the user.
 
-![Features Video](https://github.com/GreyLeaf23/tcg_swift/blob/master/tcg-swift/front-end/assets/videos/full-overview.mp4)
+
+https://github.com/GreyLeaf23/tcg_swift/assets/105189278/a65dc8c2-575e-4b0d-abf2-ed61bd20a92c
 
 
 ## How to use?
@@ -62,13 +63,7 @@ Test out the actual website here at [tcgswift.click](http://tcgswift.click) and 
 
 Brief overview of use:
 
-* General understanding of the ruleset.
-
-* Niche mechanics and concepts explained.
-
-* Deck building and synergies.
-
-* Community sharing.
+![Flowchart](https://github.com/GreyLeaf23/tcg_swift/blob/master/tcg-swift/front-end/assets/images/screenshots/flowchart.png)
 
 
 ## License
