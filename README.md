@@ -63,7 +63,7 @@ https://github.com/GreyLeaf23/tcg_swift/assets/105189278/a65dc8c2-575e-4b0d-abf2
 
 Brief overview of use:
 
-![Flowchart](https://github.com/GreyLeaf23/tcg_swift/blob/master/tcg-swift/front-end/assets/images/screenshots/flowchart.png)
+![Flowchart](https://github.com/GreyLeaf23/tcg_swift/blob/master/tcg-swift/front-end/assets/images/flowchart.png)
 
 
 ## License
